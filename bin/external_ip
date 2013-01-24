@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+require 'open-uri'
+puts open('http://ip.nefsc.noaa.gov/').read.match(/\d+\.\d+\.\d+\.\d+/)[0]
